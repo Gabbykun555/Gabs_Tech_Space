@@ -1,0 +1,454 @@
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body, html {
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;   
+}
+
+.main {
+  background-image: url('https://images.pexels.com/photos/442580/pexels-photo-442580.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 75%;
+  min-height: 100vh;
+  height: 100%;
+  float: right;
+  transition: .3s;
+}
+
+.nav-bar {
+  background-color: #4a235a;
+  width: 25%;
+  height: 100%;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+  box-shadow: 2px 0px 4px black;
+}
+
+.nav-panel {
+  padding: 10% 30%;
+  margin-top: 0%;
+}
+
+.nav-panel li {
+  color: white;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 20%;
+  border-bottom: solid 1px gray;
+  font-size: 1.2em;
+}
+
+.nav-panel li:hover {
+  color: gray;
+}
+
+h3 {
+  font-family: Pacifico;
+  padding: 3%;
+  font-size: 1.2em;
+  color: lemonchiffon;
+  font-weight: bold;
+}
+
+h4, h6 {
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.gts-logo {
+  width: 110px;
+  margin: 0;
+}
+
+a { 
+   color: white;
+   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;  
+}
+
+.space {
+  position: relative;
+  left: 20px;
+}
+
+.active {
+  color: cyan;
+  font-weight: bold;
+}
+
+.active:hover {
+  color: cyan;
+  font-weight: bold;
+}
+
+.selected {
+  color: cyan;
+  font-weight: bold;
+}
+
+.selected:hover {
+  color: cyan;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: Muli;
+  position: relative;
+  right: 15px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(211,211,211,0.4);
+}
+
+.menu-icon { 
+  visibility: hidden;
+  width: 30px;
+  margin: 1.2%;
+  padding: 0.05% 0.02%;
+}
+
+form {
+    margin-top: 10px; 
+}
+
+.contact-form {
+    background-color: purple;
+    opacity: 0.7;
+    padding: 30px;
+    border-radius: 0.3em;
+    position: relative;
+    top: 70px;
+}
+
+#name, #email, #message {
+    display: block;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
+label {
+    padding: 0px;
+    margin: 0px;
+    color: lime;
+    font-weight: 600;
+}
+
+input, h6 {
+    margin-bottom: 25px;
+}
+
+.btn {
+    color: cornflowerblue;
+}
+
+.social-icon {
+    color: #fdebd0;
+    width: 40px;
+    margin: 0;
+    padding: 0;  
+}
+
+.social-icon:hover {
+    color: #d2b4de;  
+}
+
+.social-media-links {
+   text-align: center;
+   position: relative;
+   top: 100px 
+}
+
+footer {
+    padding: 0px;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    font-size: 0.9em;
+    font-family: Arial;
+}
+
+
+.hide-nav {
+  transform: translateX(-100%);
+}
+
+.expand-main {
+  width: 100%;
+}
+
+.input-focus {
+  background-color: lemonchiffon;
+}
+
+.mobile-menu-icon {
+  display: none;  
+}
+
+.mobile-dropdown {
+  display: none;  
+}
+
+
+
+
+/* MOBILE */
+/* MEDIA QUERIES */
+
+
+
+
+@media (max-width: 2000px) {
+    .contact-form {
+      margin: 0 34%;
+  }
+}
+
+@media (max-width: 1500px) {
+    .contact-form {
+      margin: 0 31%;
+  }
+}
+
+@media (max-width: 1200px) {
+    .contact-form {
+      margin: 0 28%;
+  }
+}  
+
+@media (max-width: 1150px)  {
+    .contact-form {
+      margin: 0 26%;
+  }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+    
+    .nav-link {
+    font-size: 0.9em;
+  } 
+}
+
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  
+  .nav-link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1000px) {
+    .contact-form {
+      margin: 0 23%;
+  }
+}
+
+@media (max-width: 900px) {
+    .contact-form {
+      margin: 0 21%;
+  }
+}
+
+@media (max-width: 800px) {
+    
+  h3 {
+    font-size: 0.8em;
+  }
+  
+  .nav-link {
+    font-size: 0.9em;
+  }
+    
+  .contact-form {
+    margin: 0 18%;
+ }
+}
+
+
+@media (max-width: 750px) {
+
+    .nav-link {
+    font-size: 0.8em;
+  }
+}
+
+
+@media (max-width: 700px) {
+    .contact-form {
+      margin: 0 13%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .nav-bar {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  a {
+  color: gainsboro;
+  }
+  
+  body, html {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #4a235a;
+    }
+    
+  .menu-icon {
+    display: none;
+    }
+   
+  .mobile-menu-icon {
+    margin: 3% 5%;
+    width: 24px;
+    padding: 0;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+   .mobile-dropdown {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+    }
+    
+   .mobile-li {
+     width: 100%;
+     margin: 0;
+     color: white;
+     background-color: #4a235a;
+     text-transform: uppercase;
+     list-style-type: none;
+     padding: 2%;
+     border-bottom: solid 1px gray;
+     font-size: 1em;   
+     float: left;
+    }
+    
+   .mobile-a {
+     font-family: Muli;
+    } 
+    
+   .mobile-a:hover {
+     text-decoration: none;
+     color: gray;
+    } 
+    
+    .active {
+      color: cyan;
+    }
+    
+    .active:hover {
+      color: cyan;  
+    }
+    
+    .button:hover {
+      text-decoration: none;
+    }
+    
+    .contact {
+      border-bottom: none;
+    }
+    
+    .expand {
+     height: 100%;  
+    }
+    
+    .mobile-menu-icon {
+    display: block;
+}
+    
+  .mobile-menu-icon:hover {
+  background-color: rgba(86, 101, 115, 0.1);
+  border: none;
+  border-radius: 50%;
+}
+    
+  .contact-form {
+      margin: 0 12%;
+      position: relative;
+      top: 13%;
+  }
+    
+}
+
+@media (max-width: 575px) {
+    .contact-form {
+      margin: 0 10%;
+  }
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+      margin: 0 5%;
+      position: relative;
+      top: 10%;
+  }
+    
+   .social-media-links {
+      text-align: center;
+      position: relative;
+      top: 100px;
+   /* top: 180px; */
+  }
+}
+
+@media (max-width: 400px) {
+    .contact-form {
+      margin: 0 4%;  
+  }  
+}
+
+    
+
+@media (max-width: 300px) {
+    .contact-form {
+      margin: 0 3%;
+  }   
+}
+
+
