@@ -1,26 +1,4 @@
-
-/* Background Animation */
-
-@keyframes animatedBackground {
-	from { background-color: rgba(211,211,211,0.1);}
-	to { background-color: rgba(211,211,211,0.7);}
-}
-
-@-moz-keyframes animatedBackground {
-	from { background-color: rgba(211,211,211,0.1);}
-	to { background-color: rgba(211,211,211,0.7);}
-}
-
-@-webkit-keyframes animatedBackground {
-	from { background-color: rgba(211,211,211,0.1);}
-	to { background-color: rgba(211,211,211,0.7);}
-}
-
-@-o-keyframes animatedBackground {
-	from { background-color: rgba(211,211,211,0.1);}
-	to { background-color: rgba(211,211,211,0.7);}
-}
-
+@charset "utf-8";
 
 
 /*  Styling  */
@@ -38,7 +16,7 @@ body, html {
 }
 
 .main {
-  background-image: url('https://images.pexels.com/photos/34578/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/zig%20zag%20wool.png');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -55,8 +33,88 @@ body, html {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background-color: rgba(211,211,211,0.1);
-  animation: animatedBackground 3s ease-out;
+  background-color: white;
+}
+
+h1 {
+  color: darkred;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 5%;
+  text-shadow: 1px 1px 1px dimgray;
+}
+
+#showcase-area {
+  width: 100%;
+  text-align: center;
+}
+
+.panels {
+  text-align: center;
+}
+
+#panel1, #panel2 {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  display: inline-block;
+  margin: 3% 3% 0% 3%; 
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em 0.2em 0.1em dimgray;
+}
+
+#panel1-thumbnail, #panel2-thumbnail {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+}
+
+#panel1-thumbnail {
+  background-image: url('rjs.png');
+  background-size: cover;   
+}
+
+#panel2-thumbnail {
+  background-image: url('ihf.png');
+  background-size: cover;   
+}
+
+#panel1-header, #panel2-header {
+  width: 100%;
+  height: 50px;
+  border-top: solid 1px lightgray;
+}
+
+h4 {
+  color: darkred;
+  margin-top: 10px;
+  font-family: "Muli";
+}
+
+#rjs-text, #ihf-text {
+  color: rebeccapurple;
+  font-size: 1.2em;
+  float: left;
+  padding: 40px;
+  text-shadow: 1px 1px 1px gainsboro;
+}
+
+.text {
+  margin-left: 210px;
+}
+
+.panel-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;  
+}
+
+.overlay-link {
+    
 }
 
 .nav-bar {
@@ -88,14 +146,6 @@ body, html {
 
 .nav-panel li:hover {
   color: gray;
-}
-
-h3 {
-  font-family: Pacifico;
-  padding: 3%;
-  font-size: 1.2em;
-  color: lemonchiffon;
-  font-weight: bold;
 }
 
 .gts-logo {
@@ -148,31 +198,6 @@ a:hover {
   background-color: rgba(211,211,211,0.8);
 }
 
-.disclaimer {
-  position: relative;
-  top: 25%;
-  color: dimgray;
-}
-
-.disclaimer-heading {
-  font-size: 2em;
-  font-family: Raleway;
-}
-
-.disclaimer-text {
-  font-family: Raleway; 
-}
-
-.disclaimer-img {
-   text-align: center;
-   opacity: 0.8;
-}
-
-
-.disclaimer-heading, .disclaimer-img {
-   padding: 2% 0%; 
-}
-
 .menu-icon {
   visibility: hidden;
   width: 30px;
@@ -200,6 +225,200 @@ a:hover {
     display: none;
 }
 
+.text-on-hover {
+   color: rebeccapurple;
+}
+
+.blur {
+    opacity: 0.8;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+
+@media (max-width: 1500px) {
+    
+body, html {
+   overflow-y: hidden;     
+}
+    
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 40px;    
+}
+    
+.text {
+   margin-left: 185px;
+ }
+}
+
+
+@media (max-width: 1450px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 40px;    
+}
+    
+.text {
+   margin-left: 170px;
+ }
+}
+
+
+@media (max-width: 1400px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 40px;    
+}
+    
+.text {
+   margin-left: 150px;
+ }
+}
+
+@media (max-width: 1350px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 40px;    
+}
+    
+.text {
+   margin-left: 135px;
+ }
+}
+
+@media (max-width: 1300px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 35px;    
+}
+    
+.text {
+   margin-left: 125px;
+ }
+}
+
+@media (max-width: 1250px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 35px;    
+}
+    
+.text {
+   margin-left: 115px;
+ }
+}
+
+@media (max-width: 1200px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 35px;    
+}
+    
+.text {
+   margin-left: 95px;
+ }
+}
+
+@media (max-width: 1150px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 30px;    
+}
+    
+.text {
+   margin-left: 80px;
+ }
+}
+
+@media (max-width: 1100px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 30px;    
+}
+    
+.text {
+   margin-left: 65px;
+ }
+}
+
+@media (max-width: 1100px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 30px;    
+}
+    
+.text {
+   margin-left: 55px;
+ }
+}
+
+@media (max-width: 1030px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 30px 25px;    
+}
+    
+.text {
+   margin-left: 55px;
+ }
+}
+
+
+@media (max-width: 1000px) {
+    #ihf-text {
+        position: relative;
+        left: 285px;
+        bottom: 133px;
+    }
+
+    #rjs-text {
+        position: relative;
+        right: 35px; 
+    }
+    
+@media (max-width: 975px) {
+    #ihf-text {
+        position: relative;
+        left: 280px;
+        bottom: 133px;
+    }
+
+    #rjs-text {
+        position: relative;
+        right: 29px; 
+    }
+    
+@media (max-width: 920px) {
+    
+    body, html {
+        overflow-y: auto;
+    }
+    #rjs-text, #ihf-text {
+        display: none;
+    }
+    
+    #panel1, #panel2 {
+        margin: 20px 0;
+    }
+    }
+
 
 
 @media (min-width: 1000px) and (max-width: 1250px) {
@@ -214,6 +433,17 @@ a:hover {
   .nav-link {
     font-size: 0.8em;
   }
+    
+   #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left;
+   padding: 30px 25px;    
+}
+    
+.text {
+   margin-left: 55px;
+ }
+}
 }
 
 @media (max-width: 800px) {
@@ -238,6 +468,9 @@ a:hover {
 
 
 @media (max-width: 600px) {
+    body, html {
+        overflow-y: auto;
+    }
   
   .main {
     width: 100%;
@@ -266,10 +499,6 @@ a:hover {
    
   .nav-bar {
     display: none;
-    }
-    
-  .main {
-     width: 100%;   
     }
     
   .menu-icon {
@@ -355,6 +584,11 @@ a:hover {
   border-radius: 50%;
 }
     
+    h1 {
+        font-size: 1.4em;
+        padding-top: 13%;
+    }
+    
 }
 
 @media (min-width: 0px) and (max-width: 600px) {
@@ -377,5 +611,20 @@ a:hover {
     .disclaimer-heading {
         font-size: 1.7em;
     }
+    
+    h1 {
+            padding-top: 23%;
+        }
 }
 
+    
+    @media (max-width: 450px) {
+        #panel1, #panel2 {
+        margin: 10px 0;
+    }
+        
+        h1 {
+         font-size: 1.2em;
+         margin-bottom: 45px;
+        }
+    }
