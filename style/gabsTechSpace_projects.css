@@ -10,30 +10,33 @@
 }
 
 body, html {
-  height: 100%;
-  min-height: 100vh;
-  overflow: hidden; 
+  height: 150%;
+  min-height: 100%;
+  overflow-y: auto; 
 }
 
 .main {
-  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/zig%20zag%20wool.png');
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/zig%20zag%20wool.png'); 
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 75%;
-  height: 100%;
-  min-height: 100vh;
+  height: 150%;
+  min-height: 100%;
   float: right;
   transition: .2s;
+  z-index: 1;
 }
 
 .overlay {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 150%;
+  min-height: 100%;
   background-color: white;
+  opacity: 0.9;
+  z-index: 2;
 }
 
 h1 {
@@ -66,7 +69,33 @@ h1 {
   box-shadow: 0.1em 0.1em 0.2em 0.1em dimgray;
 }
 
-#panel1-thumbnail, #panel2-thumbnail {
+#panel3, #panel4 {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 0% 3% 0% 3%; 
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em 0.2em 0.1em dimgray;
+}
+
+#panel3 {
+  background-color: white;
+}
+
+#mia-text {
+  margin-left: 173px;
+}
+
+#panel4 {
+  visibility: hidden;
+}
+
+
+.new-row {
+  text-align: center;  
+}
+
+#panel1-thumbnail, #panel2-thumbnail, #panel3-thumbnail {
   width: 100%;
   height: 250px;
   border-top-left-radius: 0.4em;
@@ -83,10 +112,30 @@ h1 {
   background-size: cover;   
 }
 
-#panel1-header, #panel2-header {
+#panel3-thumbnail {
+  background-image: url('movieapp.png');
+  background-size: cover;   
+}
+
+#panel1-header {
+  background-color: white;  
+  border-radius: 0.4em;
+}
+
+#panel2-header {
+  background-color: white;  
+  border-radius: 0.4em;
+}
+
+#panel3-header {
+  background-color: white;  
+  border-radius: 0.4em
+}
+
+#panel1-header, #panel2-header, #panel3-header {
   width: 100%;
   height: 50px;
-  border-top: solid 1px lightgray;
+  border-top: solid 1px lightgray;    
 }
 
 h4 {
@@ -95,11 +144,11 @@ h4 {
   font-family: "Muli";
 }
 
-#rjs-text, #ihf-text {
+#rjs-text, #ihf-text, #mia-text {
   color: rebeccapurple;
   font-size: 1.2em;
   float: left;
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
   text-shadow: 1px 1px 1px gainsboro;
 }
 
@@ -128,6 +177,7 @@ h4 {
   -moz-transition: .3s;
   transition: .3s;
   box-shadow: 2px 0px 4px black;
+  position: fixed;
 }
 
 .nav-panel {
@@ -243,14 +293,13 @@ a:hover {
 
 @media (max-width: 1500px) {
     
-body, html {
-   overflow-y: hidden;     
+ #rjs-text, #ihf-text {
+   padding: 40px 40px 0px 40px;
+
 }
     
- #rjs-text, #ihf-text {
-   font-size: 1.2em;
-   float: left;
-   padding: 40px;    
+#mia-text {
+  margin-left: 160px;
 }
     
 .text {
@@ -260,47 +309,46 @@ body, html {
 
 
 @media (max-width: 1450px) {
- #rjs-text, #ihf-text {
-   font-size: 1.2em;
-   float: left;
-   padding: 40px;    
-}
-    
 .text {
    margin-left: 170px;
  }
-}
-
-
-@media (max-width: 1400px) {
- #rjs-text, #ihf-text {
-   font-size: 1.2em;
-   float: left;
-   padding: 40px;    
-}
     
+#mia-text {
+  margin-left: 150px;
+}
+}
+
+
+@media (max-width: 1400px) {  
 .text {
    margin-left: 150px;
  }
+    
+#mia-text {
+  margin-left: 130px;
+}
 }
 
 @media (max-width: 1350px) {
- #rjs-text, #ihf-text {
-   font-size: 1.2em;
-   float: left;
-   padding: 40px;    
-}
-    
 .text {
    margin-left: 135px;
  }
+    
+#mia-text {
+  margin-left: 110px;
+}
+    
 }
 
 @media (max-width: 1300px) {
  #rjs-text, #ihf-text {
    font-size: 1.2em;
    float: left;
-   padding: 35px;    
+   padding: 35px 35px 0px 35px;   
+}
+    
+#mia-text {
+  margin-left: 95px;
 }
     
 .text {
@@ -312,19 +360,31 @@ body, html {
  #rjs-text, #ihf-text {
    font-size: 1.2em;
    float: left;
-   padding: 35px;    
+   padding: 35px 35px 0px 35px;     
 }
     
 .text {
    margin-left: 115px;
  }
+    
+#mia-text {
+  margin-left: 80px;
+}
 }
 
 @media (max-width: 1200px) {
  #rjs-text, #ihf-text {
    font-size: 1.2em;
    float: left;
-   padding: 35px;    
+   padding: 35px 35px 0px 35px;    
+}
+    
+    #panel2 {
+        clear:both;
+    }
+    
+#mia-text {
+  margin-left: 60px;
 }
     
 .text {
@@ -335,8 +395,12 @@ body, html {
 @media (max-width: 1150px) {
  #rjs-text, #ihf-text {
    font-size: 1.2em;
-   float: left;
-   padding: 30px;    
+   float: left; 
+   padding: 30px 30px 0px 30px;     
+}
+    
+#mia-text {
+  margin-left: 40px;
 }
     
 .text {
@@ -344,11 +408,31 @@ body, html {
  }
 }
 
+
 @media (max-width: 1100px) {
  #rjs-text, #ihf-text {
    font-size: 1.2em;
    float: left;
-   padding: 30px;    
+   padding: 30px 30px 0px 30px;   
+}
+  
+#mia-text {
+  margin-left: 25px;
+}    
+.text {
+   margin-left: 65px;
+ }
+}
+
+@media (max-width: 1050px) {
+ #rjs-text, #ihf-text {
+   font-size: 1.2em;
+   float: left; 
+   padding: 25px 20px 0px 20px;    
+}
+  
+#mia-text {
+  margin-left: 0px;
 }
     
 .text {
@@ -356,23 +440,16 @@ body, html {
  }
 }
 
-@media (max-width: 1100px) {
- #rjs-text, #ihf-text {
-   font-size: 1.2em;
-   float: left;
-   padding: 30px;    
-}
-    
-.text {
-   margin-left: 55px;
- }
-}
 
 @media (max-width: 1030px) {
  #rjs-text, #ihf-text {
    font-size: 1.2em;
    float: left;
-   padding: 30px 25px;    
+   padding: 25px 20px 0px 20px;    
+}
+    
+#mia-text {
+  margin-left: 0px;
 }
     
 .text {
@@ -382,10 +459,16 @@ body, html {
 
 
 @media (max-width: 1000px) {
+    #rjs-text, #ihf-text, #mia-text {
+        font-size: 1.2em;
+        float: left;
+        padding: 25px 15px 0px 15px;    
+    }
     #ihf-text {
         position: relative;
         left: 285px;
         bottom: 133px;
+        float: left; 
     }
 
     #rjs-text {
@@ -393,11 +476,19 @@ body, html {
         right: 35px; 
     }
     
-@media (max-width: 975px) {
+    #mia-text {
+        float: left;
+    }
+    
+}
+    
+  
+@media (max-width: 921px) and (max-width: 999px) {
     #ihf-text {
         position: relative;
         left: 280px;
         bottom: 133px;
+        float: left;
     }
 
     #rjs-text {
@@ -405,18 +496,30 @@ body, html {
         right: 29px; 
     }
     
-@media (max-width: 920px) {
-    
-    body, html {
-        overflow-y: auto;
+    /*
+    #mia-text {
+        position: relative;
+        left: 280px;
     }
-    #rjs-text, #ihf-text {
+    */
+} 
+
+
+@media (max-width: 930px) {
+
+    #rjs-text, #ihf-text, #mia-text {
         display: none;
     }
-    
+   
     #panel1, #panel2 {
         margin: 20px 0;
     }
+
+    #panel3 {
+        margin: 20px 20px;
+    }
+    
+    
     }
 
 
@@ -427,7 +530,6 @@ body, html {
   }
 }
 
-
 @media (min-width: 800px) and (max-width: 1000px) {
   
   .nav-link {
@@ -436,14 +538,10 @@ body, html {
     
    #rjs-text, #ihf-text {
    font-size: 1.2em;
-   float: left;
+  /* float: left; */
    padding: 30px 25px;    
 }
-    
-.text {
-   margin-left: 55px;
- }
-}
+   
 }
 
 @media (max-width: 800px) {
@@ -490,10 +588,9 @@ body, html {
   
   body, html {
     width: 100%;
-    height: 100%;
+    height: 130%;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
     background-color: #4a235a; 
     }
    
@@ -507,12 +604,13 @@ body, html {
    
   .mobile-menu-icon {
     margin: 3% 5%;
-    width: 24px;
+    width: 26px;
     padding: 0;
     float: right;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 3;
   }
   
    .mobile-dropdown {
@@ -619,7 +717,7 @@ body, html {
 
     
     @media (max-width: 450px) {
-        #panel1, #panel2 {
+        #panel1, #panel2, #panel3 {
         margin: 10px 0;
     }
         

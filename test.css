@@ -1,0 +1,28 @@
+body, html {
+
+}
+
+img {
+    height: 300px;
+    width: 400px;
+    max-width: 100%;
+    ;
+}
+
+.card {
+    width: 30%;
+    height: 400px;
+    display: inline-block;
+    max-height: 60%;
+    border-radius: 0.4em;
+    padding: 20px;
+}
+
+.card-text, .card-title {
+    padding: 2%;
+    text-align: center; 
+}
+
+a {
+    text-align: center;
+}

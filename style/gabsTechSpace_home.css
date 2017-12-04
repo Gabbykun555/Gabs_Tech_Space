@@ -140,6 +140,7 @@ h1 {
   color: purple;
   opacity: 4;
   text-shadow: 0.1px 1px 1px black;
+  animation-duration: 5s;
 }
 
 .home-content {
@@ -162,6 +163,7 @@ a:hover {
   font-size: 1.3em;
   text-align: center;
   padding: 0.5em 0.7em;
+  border-radius: 0.18em;
 }
 
 .button:hover {
@@ -328,7 +330,7 @@ h1 {
    
   .mobile-menu-icon {
     margin: 3% 5%;
-    width: 24px;
+    width: 26px;
     padding: 0;
     float: right;
     position: absolute;
